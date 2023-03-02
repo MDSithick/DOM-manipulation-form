@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+
+    #title{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(5, 49, 125);
+    }
+
+    #description{
+    text-align: center;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #3d76a5;
+    }
+
+    #form{
+    margin: 20px auto;
+    max-width: 500px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: burlywood;
+    }
+
+    #form .form-group{
+    margin-bottom: 10px;
+    }
+    
+   form label{
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+   }
+
+   form input[type="text"]{
+    width: 250px;
+    padding: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+   table{
+    margin: 20px auto;
+    width:100%;
+    border-collapse: collapse;
+    background-color: #b1d4ca;
+  }
+
+  table th,
+  table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+   }
+
+  table th {
+    background-color: #3a8b74;
+    font-weight: bold;
+  }
+  </style>
+  
+</head>
+<body>
+    <h1 id="title">FORM</h1>
+    <p id="description">Form and Table using HTML, CSS and JavaScript</p>
+     
+    <form id="form">
+       <div class="form-group">
+        <label for="first-name">first name:</label>
+        <input type="text" name="first-name" id="first-name" placeholder="firstname" required>
+       </div>
+        <div class="form-group">
+            <label for="last-name">last name:</label>
+            <input type="text" name="last-name" id="last-name" placeholder="lastname" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea name="address" id="address" cols="32" rows="2" placeholder="address" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="pincode">pincode:</label>
+            <input type="text" name="pincode" id="pincode" placeholder="pincode" required>
+        </div>
+        <div class="form-group">
+            <label for="gender">gender:</label>
+            <label for="male"><input type="radio" placeholder="gender" value="male" name="gender" required/> male</label>
+            <label for="female"><input type="radio" placeholder="gender" value="female" name="gender" required/> Female</label>
+        </div>
+        <div class="form-group">
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required placeholder="state">
+          </div>
+          <div class="form-group">
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required placeholder="country">
+          </div>
+          <div>
+            <label for="food">Choice of Food (Choose at least 2 out of 5 options):</label><br>
+            <label for="food1"><input type="checkbox" id="food1" name="food[]" value="pizza">Pizza</label><br>
+            <label for="food2"><input type="checkbox" id="food2" name="food[]" value="burger">Burger</label><br>
+            <label for="food3"><input type="checkbox" id="food3" name="food[]" value="sandwich">Sandwich</label><br>
+            <label for="food4"><input type="checkbox" id="food4" name="food[]" value="pasta">Pasta</label><br>
+            <label for="food5"><input type="checkbox" id="food5" name="food[]" value="salad">Salad</label><br>
+          </div>
+        
+       <div  class="form-group">
+        <button type="submit" id="submit" class="submit btn btn-primary">submit</button>
+       </div>
+
+    </form>
+    <div class="data">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Address</th>
+                <th>Pincode</th>
+                <th>Gender</th>
+                <th>State</th>
+                <th>Country</th>
+                <th>Food</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+    </div>
+    
+    
+</body>
+<script src="form.js"></script>
+<script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js" ></script>
+</html>
